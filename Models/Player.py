@@ -4,6 +4,7 @@ class Player:
     def __init__(self) -> None:
         self.castle_level: int = 1
         self.knight_level: int = 1
+        self.archer_level: int = 1
     
     def upgrade_castle(self) -> int:
         self.castle_level += 1
@@ -13,5 +14,10 @@ class Player:
         self.knight_level += 1
         return self.knight_level
     
+    def upgrade_archer(self) -> int:
+        self.archer_level += 1
+        return self.archer_level
+    
     def create_side(self):
         Ally_Side(self.castle_level, self.knight_level)
+        

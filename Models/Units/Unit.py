@@ -13,7 +13,6 @@ class Unit:
                  critical: float,
                  hp: float,
                  attack_damage: int,
-                 cost: Mana,
                  level: int) -> None:
         Unit.count += 1
         self.name: str = name
@@ -24,7 +23,6 @@ class Unit:
         self.critical: float = critical
         self.hp: float = hp   
         self.attack_damage: int = attack_damage
-        self.cost: Mana = cost
         self.level: int = level
     
     def __del__(self) -> None:

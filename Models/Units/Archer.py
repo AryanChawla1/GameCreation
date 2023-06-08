@@ -1,16 +1,16 @@
 from Unit import Unit
 from Mana import Mana
 
-class Knight(Unit):
+class Archer(Unit):
     def __init__(self, level: int):
-        name = "knight"
-        range = 1
-        attack_speed = 1 - 0.1 * level
-        speed = 25 + 10 * level
-        defense = 5 + 7 * level
-        critical = 0.05 + 0.05 * level
-        hp = 100 + 100 * level
-        attack_damage = 20 + 10 * level
+        name = "archer"
+        range = 3
+        attack_speed = 2 - 0.2 * level
+        speed = 30 + 10 * level
+        defense = 0 + 3 * level
+        critical = 0.07 + 0.05 * level
+        hp = 80 + 80 * level
+        attack_damage = 10 + 10 * level
         super().__init__(name,
                          range,
                          attack_speed,
