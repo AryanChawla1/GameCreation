@@ -1,7 +1,7 @@
-from Units import *
-from Mana import Mana
-from Castle import Castle
-from Player import Player
+from units import *
+from mana import Mana
+from castle import Castle
+from player import Player
 
 class Ally_Side:
     def __init__(self, player: Player) -> None:

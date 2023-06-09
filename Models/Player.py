@@ -1,4 +1,4 @@
-from Ally_Side import Ally_Side
+from ally_side import Ally_Side
 
 class Player:
     def __init__(self) -> None:

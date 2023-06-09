@@ -1,5 +1,4 @@
-from Unit import Unit
-from Mana import Mana
+from unit import Unit
 
 class Archer(Unit):
     def __init__(self, level: int):

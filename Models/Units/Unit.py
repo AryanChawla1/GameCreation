@@ -1,5 +1,4 @@
 import random
-from Mana import Mana
 
 class Unit:
     count = 0
@@ -27,6 +26,18 @@ class Unit:
     
     def __del__(self) -> None:
         pass
+
+    def __str__(self) -> str:
+        return "{id: " + str(Unit.count)\
+        + ", name: " + self.name + \
+        ", range: " + str(self.range) + \
+        ", attack_speed: " + str(self.attack_speed) + \
+        ", speed: " + str(self.speed) + \
+        ", defense: " + str(self.defense) + \
+        ", critical: " + str(self.critical) + \
+        ", hp: " + str(self.hp) + \
+        ", attack damage: " + str(self.attack_damage) + \
+        ", level: " + str(self.level) + "}"
 
     def attack(self) -> int:
         if random.randint(0, 100) <= self.critical:

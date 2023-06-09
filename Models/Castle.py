@@ -13,7 +13,7 @@ class Castle:
          self.hp = 0
       return self.hp
    
-   def level_up(self, new_level):
-      self.level = new_level
-      self.hp = 500 * self.level
+   def level_up(self):
+      self.level += 1
+      self.hp += 500
       
