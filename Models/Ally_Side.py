@@ -1,4 +1,6 @@
-from units import *
+from units.knight import Knight
+from units.archer import Archer
+from units.unit import Unit
 from mana import Mana
 from castle import Castle
 from player import Player

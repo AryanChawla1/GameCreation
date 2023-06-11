@@ -40,7 +40,7 @@ class Unit:
         ", level: " + str(self.level) + "}"
 
     def attack(self) -> int:
-        if random.randint(0, 100) <= self.critical:
+        if random.randint(1, 100) <= self.critical:
             return self.attack_damage * 3
         return self.attack_damage
     
