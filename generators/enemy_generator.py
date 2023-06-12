@@ -1,6 +1,6 @@
 import argparse
 
-from ..Models.Units import Enemy
+from ..models.units.enemy import Enemy
 
 def enemy_generator(number: int):
     value = 0
